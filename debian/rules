@@ -1,0 +1,39 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+build:
+
+clean:
+	dh_testdir
+	dh_clean -pomap3430-dsp-baseimage-ti
+	dh_clean -pomap3430-dsp-libraries-ti
+
+binary:
+	dh_testdir
+	dh_testroot
+	dh_clean -k -pomap3430-dsp-baseimage-ti
+	dh_clean -k -pomap3430-dsp-libraries-ti
+
+	mkdir -p debian/omap3430-dsp-baseimage-ti
+	cp -ra omap3430-dsp-baseimage-ti/* debian/omap3430-dsp-baseimage-ti
+	dh_installdocs -pomap3430-dsp-baseimage-ti
+	dh_installchangelogs -pomap3430-dsp-baseimage-ti
+	dh_compress -pomap3430-dsp-baseimage-ti
+	dh_fixperms -pomap3430-dsp-baseimage-ti
+	dh_installdeb -pomap3430-dsp-baseimage-ti
+	dh_gencontrol -pomap3430-dsp-baseimage-ti
+	dh_md5sums -pomap3430-dsp-baseimage-ti
+	dh_builddeb -pomap3430-dsp-baseimage-ti
+
+	mkdir -p debian/omap3430-dsp-libraries-ti
+	cp -ra omap3430-dsp-libraries-ti/* debian/omap3430-dsp-libraries-ti
+	dh_installdocs -pomap3430-dsp-libraries-ti
+	dh_installchangelogs -pomap3430-dsp-libraries-ti
+	dh_compress -pomap3430-dsp-libraries-ti
+	dh_fixperms -pomap3430-dsp-libraries-ti
+	dh_installdeb -pomap3430-dsp-libraries-ti
+	dh_gencontrol -pomap3430-dsp-libraries-ti
+	dh_md5sums -pomap3430-dsp-libraries-ti
+	dh_builddeb -pomap3430-dsp-libraries-ti
+
+.PHONY: build clean binary

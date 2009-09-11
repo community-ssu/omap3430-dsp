@@ -1,0 +1,28 @@
+Source: openmax-omap3430-ti
+Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Build-Depends: debhelper (>= 5)
+
+Package: omap3430-dsp-baseimage-ti
+Section: non-free
+Priority: optional
+Architecture: armel
+Depends: libbridge2, libc6 (>= 2.5.0-1)
+Description: DSP base image
+ DSP base image for OMAP3430.
+
+Package: omap3430-dsp-libraries-ti
+Section: non-free
+Priority: optional
+Architecture: armel
+Depends: omap3430-dsp-baseimage-ti
+Description: DSP codecs
+ DSP codecs for OMAP3430.
+ .
+ Codecs included:
+ .
+ * H.263 encoder / decoder
+ * H.264 encoder / decoder
+ * MPEG-4 encoder
+ * MPEG-4 ASP decoder
+ * WMV9 decoder
+ * JPEG encoder

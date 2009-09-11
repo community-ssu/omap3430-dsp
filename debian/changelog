@@ -1,0 +1,302 @@
+openmax-omap3430-ti (0.200937-1+0m5) unstable; urgency=low
+
+  * This entry has been added by BIFH queue processor
+    Suffix +0m5 added to package revision
+
+ -- Attiq Malik <ext-attiq.1.malik@nokia.com>  Fri, 11 Sep 2009 12:27:30 +0300
+
+openmax-omap3430-ti (0.200937-1) unstable; urgency=low
+
+  * WMV9 dec SN: fix dspbridge mailbox timeouts when trying to decode
+    unsupported stream (Fixes: NB#136754)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Tue, 08 Sep 2009 15:25:40 +0200
+
+openmax-omap3430-ti (0.200935-2) unstable; urgency=low
+
+  * MPEG4 Enc SN Modified to do sequencer reset in case of buffer overflow
+  * WMV9 Dec SN Modified to fix DSP MMU fault (Fixes: NB#133262)
+  * H264 Dec SN modified to do sequencer reset after decoding an erroneous
+    stream (Fixes: NB#132295)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 28 Aug 2009 13:00:40 +0200
+
+openmax-omap3430-ti (0.200935-1) unstable; urgency=low
+
+  * videodec: fix for flush problem (Fixes: NB#133116)
+  * video encoder removed from libomxil-ti-components package
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 24 Aug 2009 16:01:40 +0200
+
+openmax-omap3430-ti (0.200934-1) unstable; urgency=low
+
+  * videodec: fix the problem of OMX not properly exiting when an
+    error occurs (Fixes: NB#128245, NB#129730)
+  * H.264 decoder SN updated to detect missing SPS
+  * videodec: return OMX_ErrorFormatNotDetected when H.264 SN detects
+    missing SPS (Fixes: NB#130347)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 17 Aug 2009 12:11:00 +0200
+
+openmax-omap3430-ti (0.200933-1) unstable; urgency=low
+
+  * New release from TI (12.20M10)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Wed, 12 Aug 2009 14:14:40 +0200
+
+openmax-omap3430-ti (0.200928-5) unstable; urgency=low
+
+  * videodec: remove double pointer free (Fixes: NB#128315)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 31 Jul 2009 16:42:40 +0200
+
+openmax-omap3430-ti (0.200928-4) unstable; urgency=low
+
+  * videoenc: fix for bitrate issue
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 31 Jul 2009 12:57:00 +0200
+
+openmax-omap3430-ti (0.200928-3) unstable; urgency=low
+
+  * New release from TI (12.20M10RC1)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Wed, 29 Jul 2009 15:26:13 +0200
+
+openmax-omap3430-ti (0.200928-2) unstable; urgency=low
+
+  * Reverted changes to get back /etc/modprobe.d/bridgedriver.
+  * Improvements on bug 130280.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Tue, 28 Jul 2009 14:28:56 +0200
+
+openmax-omap3430-ti (0.200928-1) unstable; urgency=low
+
+  * Added TI's M10RC1 ARM and DSP side modifications.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 27 Jul 2009 18:18:18 +0200
+
+openmax-omap3430-ti (0.200927-3) unstable; urgency=low
+
+  * Modified changelog to accomplish integration requirements.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Tue, 07 Jul 2009 16:14:55 +0200
+
+openmax-omap3430-ti (0.200927-2) unstable; urgency=low
+
+  * MPEG4 / H.263, H.264 and WMV decoder SNs updated to handle EOS
+    correctly (improvements on bug 106199)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 03 Jul 2009 14:09:00 +0200
+
+openmax-omap3430-ti (0.200927-1) unstable; urgency=low
+
+  * videodec: fix for seek issue (Fixes: NB#113921)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 29 Jun 2009 12:12:00 +0200
+
+openmax-omap3430-ti (0.200926-1) unstable; urgency=low
+
+  * videodec: add checks for unsupported resolutions (Fixes: NB#119440)
+  * H.264 decoder updated to improve error resilience (Fixes: NB#109616)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Tue, 23 Jun 2009 15:32:00 +0200
+
+openmax-omap3430-ti (0.200924-1) unstable; urgency=low
+
+  * MPEG4 decoder updated to improve error resilience.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 12 Jun 2009 15:37:00 +0200
+
+openmax-omap3430-ti (0.200923-1) unstable; urgency=low
+
+  * videoenc: check supported resolution (Fixes: NB#115461)
+  * disable annexes I, J, T for H.263 encoder by default (Fixes: NB#118875)
+  * MPEG4 encoder updated (fixes problem with 128x96 resolution)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 5 Jun 2009 13:41:00 +0200
+ 
+openmax-omap3430-ti (0.200921-1) unstable; urgency=low
+
+  * New release from TI (12.20M7)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 22 May 2009 15:31:00 +0200
+
+openmax-omap3430-ti (0.200920-1) unstable; urgency=low
+
+  * videoenc: set bitrate based on resolution
+  * videoenc: general improvements and fixes
+  * videodec: general improvements and fixes
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Tue, 12 May 2009 15:01:00 +0200
+
+openmax-omap3430-ti (0.200917-1) unstable; urgency=low
+
+  * JPEG encoder updated.
+  * Add check for the existence of MPEG4 720p decoder.
+  * Removed dsp-manager (moved to a separate package).
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Wed, 22 Apr 2009 17:31:04 +0200
+
+openmax-omap3430-ti (0.200914-3) unstable; urgency=low
+
+  * Videoenc: increase the size of output buffers
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 03 Apr 2009 16:31:04 +0200
+
+openmax-omap3430-ti (0.200914-2) unstable; urgency=low
+
+  * Fix unnecessary error from JPEG encoder.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Thu, 02 Apr 2009 15:31:04 +0200
+
+openmax-omap3430-ti (0.200914-1) unstable; urgency=low
+
+  * Remove custom LCML patch for stability reasons.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Tue, 31 Mar 2009 15:31:04 +0200
+
+openmax-omap3430-ti (0.200913-1) unstable; urgency=low
+
+  * Update errors to use OMX_ErrorNotImplemented.
+  * Add custom LCML patch for performance reasons.
+  * Remove hard-coded framerate for video encoders.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 23 Mar 2009 16:31:04 +0200
+
+openmax-omap3430-ti (0.200912-1) unstable; urgency=low
+
+  * Fixes: NB#102924 - no proper error message to handle unsupported mpeg4 clip
+  * Fixes: NB#103390 - no proper error message for unsupported H264 clip
+  * Fixes: NB#105511 - H264 QCIF file fails to decode
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 16 Mar 2009 12:08:39 +0200
+
+openmax-omap3430-ti (0.200911-1) unstable; urgency=low
+
+  * Fixes: NB#104750 - H.263 and MPEG4 encoder errors seen
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 09 Mar 2009 13:08:39 +0200
+
+openmax-omap3430-ti (0.200910-2) unstable; urgency=low
+
+  * H.264 encoder NAL unit stream mode fix.
+  * Changes to DSP recovery application and DSP init script.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Thu, 05 Mar 2009 15:08:39 +0200
+
+openmax-omap3430-ti (0.200910-1) unstable; urgency=low
+
+  * Fixes to DSP recovery application.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 02 Mar 2009 17:38:39 +0200
+
+openmax-omap3430-ti (0.200909-1) unstable; urgency=low
+
+  * DSP power management changes.
+  * Fixes: NB#94914, NB#99714, NB#91258, NB#99559, NB#89590, NB#94313, NB#97047
+  * Implemented: NR#185290, NR#189644
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 23 Feb 2009 14:38:39 +0200
+
+openmax-omap3430-ti (0.200908-3) unstable; urgency=low
+
+  * New release from TI (12.20M3P6).
+  * Fixes: NB#94914, NB#99714, NB#91258, NB#99559, NB#89590, NB#94313, NB#97047
+  * Implemented: NR#185290, NR#189644
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 20 Feb 2009 14:38:39 +0200
+
+openmax-omap3430-ti (0.200908-2) unstable; urgency=low
+
+  * New release from TI (12.20M3P5).
+  * Added DSP recovery application.
+  * Fixes: NB#94914, NB#99714
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Wed, 18 Feb 2009 18:08:39 +0200
+
+openmax-omap3430-ti (0.200908-1) unstable; urgency=low
+
+  * New release from TI (12.20M3P3) + TI code camp patch.
+  * Fixes for MPEG4, H.264 and WMV9 decoders.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 16 Feb 2009 18:08:39 +0200
+
+openmax-omap3430-ti (0.200903-1) unstable; urgency=low
+
+  * New release from TI (12.20M3P2).
+  * Added WMV9 decoder.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Thu, 15 Jan 2009 11:58:39 +0200
+
+openmax-omap3430-ti (0.200850-1) unstable; urgency=low
+
+  * New release from TI (12.20M3P1).
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Thu, 11 Dec 2008 15:58:39 +0200
+
+openmax-omap3430-ti (0.200849-1) unstable; urgency=low
+
+  * New release from TI (12.20M2p1).
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Thu, 04 Dec 2008 15:58:39 +0200
+
+openmax-omap3430-ti (0.200843-1) unstable; urgency=low
+
+  * Added startup script for upstart.
+  * Fixes: NB#88942, NB#87542, NB#89989
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Tue, 21 Oct 2008 14:58:39 +0200
+
+openmax-omap3430-ti (0.200838-1) unstable; urgency=low
+
+  * WVGA support for MPEG-4 and H.264 decoders.
+  * OMX Resource Manager disabled
+  * Implemented: NR#191355, NR#191356
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Mon, 15 Sep 2008 14:58:39 +0200
+
+openmax-omap3430-ti (0.200834-1) unstable; urgency=low
+
+  * Implemented: NR#152892, NR#149821, NR#152887, NR#189633, NR#189630,
+    NR#152893, NR#149822, NR#152888, NR#189637, NR#185283, NR#189640,
+    NR#189643
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Thu, 21 Aug 2008 14:58:39 +0200
+
+openmax-omap3430-ti (0.200828-1) unstable; urgency=low
+
+  * Bug fixes to H.264 encoder.
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Fri, 11 Jul 2008 14:58:39 +0200
+
+openmax-omap3430-ti (0.200821-1) unstable; urgency=low
+
+  * Added JPEG encoder.
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Fri, 23 May 2008 14:58:39 +0200
+
+openmax-omap3430-ti (0.200819-1) unstable; urgency=low
+
+  * Added MPEG-4 ASP decoder.
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Fri, 09 May 2008 14:58:39 +0200
+
+openmax-omap3430-ti (0.200813-1) unstable; urgency=low
+
+  * Added H.264 encoder.
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Fri, 28 Mar 2008 14:58:39 +0200
+
+openmax-omap3430-ti (0.200810-1) unstable; urgency=low
+
+  * Added MPEG-4 and H.263 encoders.
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Fri, 07 Mar 2008 14:58:39 +0200
+
+openmax-omap3430-ti (0.200806-1) unstable; urgency=low
+
+  * Initial release of Texas Instruments OpenMAX IL implementation.
+  * Includes MPEG-4, H.263 and H.264 decoders.
+
+ -- Juha Alanen <juha.m.alanen@nokia.com>  Tue, 05 Feb 2008 14:58:39 +0200
+
