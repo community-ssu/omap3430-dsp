@@ -1,9 +1,58 @@
-openmax-omap3430-ti (0.200937-1+0m5) unstable; urgency=low
+openmax-omap3430-ti (0.200944-2+0m5) unstable; urgency=low
 
   * This entry has been added by BIFH queue processor
     Suffix +0m5 added to package revision
 
- -- Attiq Malik <ext-attiq.1.malik@nokia.com>  Fri, 11 Sep 2009 12:27:30 +0300
+ -- Harri Mahonen <ext-harri.mahonen@nokia.com>  Fri, 06 Nov 2009 09:37:32 +0200
+
+openmax-omap3430-ti (0.200944-2) unstable; urgency=low
+
+  * Add check for NULL I/O buffer pointers in H.264, MPEG4 and WMV decoder
+    socket nodes. (Fixes: NB#129884)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Fri, 30 Oct 2009 15:07:23 +0300
+
+openmax-omap3430-ti (0.200944-1) unstable; urgency=low
+
+  * H.264 decoder: fix crash when decoding more than one stream simultaneously.
+    (Fixes: NB#129728)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Thu, 29 Oct 2009 13:29:03 +0300
+ 
+openmax-omap3430-ti (0.200943-1) unstable; urgency=low
+
+  * videodec: properly align frame sizes for H.263, H.264 and MPEG-4
+    decoders (Fixes: NB#143314)
+  * videodec: properly initalize some variables (Fixes: NB#143373)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Wed, 21 Oct 2009 18:25:03 +0300
+
+openmax-omap3430-ti (0.200942-1) unstable; urgency=low
+
+  * MPEG4 decoder: improve playback of clips with resolution not multiple
+    of 16.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Wed, 14 Oct 2009 16:59:03 +0300
+
+openmax-omap3430-ti (0.200941-1) unstable; urgency=low
+
+  * MPEG4 decoder: improve handling of invalid codec configuration data.
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Tue, 06 Oct 2009 15:57:03 +0300
+
+openmax-omap3430-ti (0.200940-2) unstable; urgency=low
+
+  * Fix a few important coverity findings
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Thu, 01 Oct 2009 18:31:03 +0300
+
+openmax-omap3430-ti (0.200940-1) unstable; urgency=low
+
+  * MPEG4 decoder: fix handling of invalid codec configuration data
+    to improve the compatibility with some video clips.
+    (Fixes: NB#130385, NB#137129)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Tue, 29 Sep 2009 13:05:40 +0200
 
 openmax-omap3430-ti (0.200937-1) unstable; urgency=low
 
