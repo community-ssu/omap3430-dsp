@@ -1,9 +1,21 @@
-openmax-omap3430-ti (0.200944-2+0m5) unstable; urgency=low
+openmax-omap3430-ti (0.201007-1+0m5) unstable; urgency=low
 
   * This entry has been added by BIFH queue processor
     Suffix +0m5 added to package revision
 
- -- Harri Mahonen <ext-harri.mahonen@nokia.com>  Fri, 06 Nov 2009 09:37:32 +0200
+ -- Huaming Wang <huaming.wang@nokia.com>  Tue, 16 Feb 2010 16:23:00 +0200
+
+openmax-omap3430-ti (0.201007-1) unstable; urgency=low
+
+  * videodec: get rid of deadlock in case of fatal error (Fixes: NB#145895)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Mon, 15 Feb 2009 14:32:23 +0300
+
+openmax-omap3430-ti (0.200951-1) unstable; urgency=low
+
+  * videodec: change to OMX_StateInValid on fatal error (Fixes: NB#145895)
+
+ -- Maemo Multimedia <multimedia@maemo.org>  Wed, 16 Dec 2009 16:47:23 +0300
 
 openmax-omap3430-ti (0.200944-2) unstable; urgency=low
 
