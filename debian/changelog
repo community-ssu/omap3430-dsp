@@ -1,3 +1,9 @@
+omap3430-dsp (0.i3.6-15+0m6) fremantle; urgency=low
+
+  * Initial version for CSSU with harmattan TI baseimage, codecs and HD 720p codecs
+
+ -- Pali Rohár <pali.rohar@gmail.com>  Sat, 27 Jun 2015 18:55:50 +0200
+
 openmax-omap3430-ti (0.201007-1+0m5) unstable; urgency=low
 
   * This entry has been added by BIFH queue processor
