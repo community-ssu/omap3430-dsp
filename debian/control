@@ -1,20 +1,24 @@
-Source: openmax-omap3430-ti
-Maintainer: Maemo Multimedia <multimedia@maemo.org>
+Source: omap3430-dsp
+Maintainer: Pali Rohár <pali.rohar@gmail.com>
 Build-Depends: debhelper (>= 5)
 
 Package: omap3430-dsp-baseimage-ti
-Section: non-free
+Section: non-free/misc
 Priority: optional
 Architecture: armel
-Depends: libbridge2, libc6 (>= 2.5.0-1)
+Depends: gstreamer0.10-dsp (>= 0.10), kernel-modules (>= 2.6.28-20103103+0m5+cssu1) | kernel-feature-video720p
+Conflicts: omap3-dsp-baseimage-ti
+Replaces: omap3-dsp-baseimage-ti
 Description: DSP base image
  DSP base image for OMAP3430.
 
 Package: omap3430-dsp-libraries-ti
-Section: non-free
+Section: non-free/misc
 Priority: optional
 Architecture: armel
-Depends: omap3430-dsp-baseimage-ti
+Depends: omap3430-dsp-baseimage-ti (= ${binary:Version})
+Conflicts: gstreamer0.10-hd-codecs, omap3-dsp-hd-codecs, omap3-dsp-libraries-ti, gstreamer0.10-openmax
+Replaces: gstreamer0.10-hd-codecs, omap3-dsp-hd-codecs, omap3-dsp-libraries-ti, gstreamer0.10-openmax
 Description: DSP codecs
  DSP codecs for OMAP3430.
  .
@@ -26,3 +30,10 @@ Description: DSP codecs
  * MPEG-4 ASP decoder
  * WMV9 decoder
  * JPEG encoder
+ * JPEG decoder
+ .
+ 720p codecs included:
+ .
+ * H.264 BP/MP/HP decoder
+ * MPEG-4 SP encoder
+ * MPEG-4 ASP decoder
