@@ -27,6 +27,7 @@ binary:
 
 	mkdir -p debian/omap3430-dsp-libraries-ti
 	cp -ra omap3430-dsp-libraries-ti/* debian/omap3430-dsp-libraries-ti
+	rm -f debian/omap3430-dsp-libraries-ti/lib/dsp/dfgm.dll64P debian/omap3430-dsp-libraries-ti/lib/dsp/ipp_sn.dll64P
 	dh_installdocs -pomap3430-dsp-libraries-ti
 	dh_installchangelogs -pomap3430-dsp-libraries-ti
 	dh_compress -pomap3430-dsp-libraries-ti
