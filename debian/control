@@ -1,10 +1,10 @@
 Source: omap3430-dsp
+Section: non-free/misc
+Priority: optional
 Maintainer: Pali Rohár <pali.rohar@gmail.com>
 Build-Depends: debhelper (>= 5)
 
 Package: omap3430-dsp-baseimage-ti
-Section: non-free/misc
-Priority: optional
 Architecture: armel
 Depends: gstreamer0.10-dsp (>= 0.10), kernel-modules (>= 2.6.28-20103103+0m5+cssu1) | kernel-feature-video720p
 Conflicts: omap3-dsp-baseimage-ti
@@ -13,8 +13,6 @@ Description: DSP base image
  DSP base image for OMAP3430.
 
 Package: omap3430-dsp-libraries-ti
-Section: non-free/misc
-Priority: optional
 Architecture: armel
 Depends: omap3430-dsp-baseimage-ti (= ${binary:Version})
 Conflicts: gstreamer0.10-hd-codecs, omap3-dsp-hd-codecs, omap3-dsp-libraries-ti, gstreamer0.10-openmax
